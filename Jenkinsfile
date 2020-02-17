@@ -66,7 +66,7 @@ pipeline {
 	stage ('Pushing docker image to registry') {
             steps {
 
-                    sh 'sudo docker tag  dock:latest farougtripworld/maventest:1.0 && docker login -u "farougtripworld" -p "78lmt-Usb3#" docker.io && sudo docker push farougtripworld/maventest:1.0'            }
+                    sh 'sudo docker tag  dock:latest farougtripworld/maventest:1.0 && sudo docker login -u "farougtripworld" -p "78lmt-Usb3#" docker.io && sudo docker push farougtripworld/maventest:1.0'            }
         }
 
 
