@@ -51,7 +51,7 @@ pipeline {
         stage ('Building docker image') {
             steps {
                
-                    sh 'docker build -t dock .'
+                    sh 'sudo docker build -t dock .'
                 
             }
         }
@@ -66,7 +66,7 @@ pipeline {
 	stage ('Pushing docker image to registry') {
             steps {
 
-                    sh 'docker push prabhin/dock'
+                    sh 'sudo docker push prabhin/dock'
 
             }
         }
