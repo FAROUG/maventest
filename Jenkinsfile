@@ -66,7 +66,7 @@ pipeline {
 	stage ('Pushing docker image to registry') {
             steps {
 
-                    sh 'sudo docker tag  dock:latest maventest:1.0 && sudo docker push maventest:1.0'            }
+                    sh 'docker tag  dock:latest maventest:1.0 && docker push maventest:1.0'            }
         }
 
 
